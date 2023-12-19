@@ -31,7 +31,7 @@ export default function Projects() {
     
                 <div className="overlay">
                     <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='' target='_blank' rel="noopener noreferrer">
+                      <a href='https://github.com/vandilsonbrito/vandilson-portfolio-website' target='_blank' rel="noopener noreferrer">
                         <SiGithub />
                         <span className='absolute left-[120px] text-sm mt-2'>Ver Código</span>
                       </a>
