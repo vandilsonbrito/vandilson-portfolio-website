@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.projects {
+  font-family: 'Fira Sans', sans-serif;
+}
+.container-project {
+  @apply w-[310px] h-[320px] flex flex-col items-center justify-center gap-1 rounded-xl bg-slate-100 px-4 py-2 relative;
+}
+.overlay {
+  @apply w-full h-full text-white absolute top-0 flex items-center bg-[#00000079]   opacity-0 hover:opacity-100;
+}
