@@ -17,8 +17,8 @@ import { SiGithub } from "react-icons/si";
 export default function Projects() {
 
   return (
-    <div className="w-full h-full flex flex-col gap-24 bg-black text-black px-28 py-20 " id="/Projetos">
-        <h2 className="text-5xl text-center text-white">PROJETOS</h2>
+    <div className="w-full h-full flex flex-col gap-24 bg-black text-black px-5 lg:px-28 py-20 " id="/Projetos">
+        <h2 className="text-4xl lg:text-5xl text-center text-white">PROJETOS</h2>
 
         <div className="w-full h-full flex flex-wrap justify-center gap-8 projects">
 
