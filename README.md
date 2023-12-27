@@ -14,5 +14,5 @@ Tenho conhecimento prévio em HTML5, CSS3, Tailwind CSS, JavaScript e React. Est
 
 <h2>Exibition</h2>
 
-![Vídeo mostrando o website do portfólio de Vandilson em demo](https://github.com/vandilsonbrito/vandilson-portfolio-website/assets/108373095/adfd8d3c-70a5-4c72-bf0d-b74c3b2d53d9)
+https://github.com/vandilsonbrito/vandilson-portfolio-website/assets/108373095/adfd8d3c-70a5-4c72-bf0d-b74c3b2d53d9
 
