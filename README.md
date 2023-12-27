@@ -8,9 +8,9 @@
 
 <h2>Technologies</h2>
 
-  React
-  React-Scroll
-  Tailwindcss
+  -React
+  -React-Scroll
+  -Tailwindcss
   
 <h2>Exibition</h2>
 
