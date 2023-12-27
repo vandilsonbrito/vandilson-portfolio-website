@@ -8,12 +8,10 @@
 
 <h2>Technologies</h2>
 
-    <ul>
-      <li>React</li>
-      <li>React-Scroll</li>
-      <li>Tailwindcss</li>
-    </ul>
-    
+  React
+  React-Scroll
+  Tailwindcss
+  
 <h2>Exibition</h2>
 
   https://github.com/vandilsonbrito/vandilson-portfolio-website/assets/108373095/adfd8d3c-70a5-4c72-bf0d-b74c3b2d53d9
