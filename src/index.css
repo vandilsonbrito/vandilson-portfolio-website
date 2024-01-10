@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -13,4 +14,17 @@ body {
 }
 .overlay {
   @apply w-full h-full text-white absolute top-0 flex items-center bg-[#00000079]  lg:opacity-0 hover:opacity-100;
+}
+
+.box {
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
