@@ -12,11 +12,11 @@ import feedbackMainImg from '../../assets/images/feedback-main.webp';
 import tipCalculatorImg from '../../assets/images/tip-calculator-app.webp';
 import interactiveCardDetailsImg from '../../assets/images/interactive-card-details.webp';
 import ageCalculatorImg from '../../assets/images/age-calculator-app.webp';
+import deliciasDaCasaImg from '../../assets/images/delicias-da-casa.webp';
+import profaPatriciaImg from '../../assets/images/profa-patricia-website.webp';
 
-
-import { IoEye } from "react-icons/io5";
-import { SiGithub } from "react-icons/si";
 import { useEffect } from 'react';
+import ProjectContainer from '../ProjectContainer/ProjectContainer';
 
 
 export default function Projects() {
@@ -49,297 +49,134 @@ export default function Projects() {
 
         <div className="w-full h-full flex flex-wrap justify-center gap-8 projects overflow-x-hidden">
 
-            <div className="container-project box">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Portfólio Vandilson</p>
-                <img className='w-[280px] h-[170px]' src={vandilsonWebsiteImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: React + React-Router-Dom + Tailwind CSS + React-Scroll</p>
-                </div>
-    
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://github.com/vandilsonbrito/vandilson-portfolio-website' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-[120px] text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
+            <ProjectContainer 
+                projectName={'Delícias da Casa'} 
+                imageAddress={deliciasDaCasaImg} 
+                tecnologies={"Tecnologias: React + React-Router-Dom + Tailwind CSS + React-Scroll + Stripe + Node JS"} 
+                deployUrl={'https://delicias-da-casa.netlify.app/'}
+                githubUrl={'https://github.com/vandilsonbrito/delicias-da-casa-website'}
+              />
+
+            <ProjectContainer 
+                projectName={'Prof. Janilton Website'} 
+                imageAddress={janiltonWebsiteImg} 
+                tecnologies={"Tecnologias: React + React-Router-Dom + Tailwind CSS + Prismic CMS + YouTube API + Static Forms + Swiper JS + React-Scroll"} 
+                deployUrl={'https://profjanilton.com.br/'}
+                githubUrl={'https://github.com/vandilsonbrito/janilton-website'}
+              />
+
+            <ProjectContainer 
+                projectName={'Profa. Patrícia Website'} 
+                imageAddress={profaPatriciaImg} 
+                tecnologies={"Tecnologias: React + React-Router-Dom + Tailwind CSS + React-Scroll + Swiper JS + YouTube API"} 
+                deployUrl={'https://profapatriciacruz.com.br/'}
+                githubUrl={'https://github.com/vandilsonbrito/patricia-website'}
+              />
+
+            <ProjectContainer 
+                projectName={'Portfólio Vandilson'} 
+                imageAddress={vandilsonWebsiteImg} 
+                tecnologies={"Tecnologias: React + React-Router-Dom + Tailwind CSS + React-Scroll"} 
+                deployUrl={''}
+                githubUrl={'https://github.com/vandilsonbrito/vandilson-portfolio-website'}
+              />
+              
+            <ProjectContainer 
+              projectName={'Sneaker Page'} 
+              imageAddress={sneakerPageImg} 
+              tecnologies={"Tecnologias: React (Hooks) + Tailwind CSS + Swiper JS"} 
+              deployUrl={'https://sneaker-product1.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/29-ecommerce-product-page-main'}
+            />
             
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Prof. Janilton Website</p>
-                <img className='w-[280px]  h-[170px]' src={janiltonWebsiteImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: React + React-Router-Dom + Tailwind CSS + Prismic CMS + YouTube API + Static Forms + Swiper JS + React-Scroll</p>
-                </div>
+            <ProjectContainer 
+              projectName={'Wiki Suits'} 
+              imageAddress={wikiSuitsImg} 
+              tecnologies={"Tecnologias: React + React-Router-Dom + Tailwind CSS"} 
+              deployUrl={'https://wiki-suits.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/wiki-suits'}
+            />
 
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                        <a href='https://profjanilton.com.br/' target='_blank' rel="noopener noreferrer">
-                          <IoEye className='self-center'/>
-                          <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                        </a>
-                  
-                        <a href='https://github.com/vandilsonbrito/janilton-website' target='_blank' rel="noopener noreferrer">
-                          <SiGithub />
-                          <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                          
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <ProjectContainer 
+              projectName={'YB Landing Page Clone'} 
+              imageAddress={YouTubeCloneImg} 
+              tecnologies={"Tecnologias: HTML + Tailwind CSS + YouTube API + JS (Fetch API)"} 
+              deployUrl={'https://youtube-landingpage1.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/youtube-landing-page'}
+            />
 
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Sneaker Page</p>
-                <img className='w-[280px]  h-[170px]' src={sneakerPageImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: React (Hooks) + Tailwind CSS + Swiper JS</p>
-                </div>
+            <ProjectContainer 
+              projectName={'ToDo'} 
+              imageAddress={ToDoProjectImg} 
+              tecnologies={"Tecnologias: HTML + CSS + JS + LocalStorage (CRUD)"} 
+              deployUrl={'https://todo-project-localstorage.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/to-do-project'}
+            />
+  
+            <ProjectContainer 
+              projectName={'Advice Generator'} 
+              imageAddress={adviceGeneratorImg} 
+              tecnologies={"Tecnologias: CSS + JS (Fetch API) + Advice Slip JSON API"} 
+              deployUrl={'https://advice-generator-app-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/23-advice-generator-app-main'}
+            />
 
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://sneaker-product1.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/29-ecommerce-product-page-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
+            <ProjectContainer 
+              projectName={'Accordion FAQ'} 
+              imageAddress={FAQImg} 
+              tecnologies={"Tecnologias: HTML + CSS + JS"} 
+              deployUrl={'https://faq-accordion-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/09-faq-accordion-card-main'}
+            />
+          
+            <ProjectContainer 
+              projectName={'Weather APP'} 
+              imageAddress={weatherAppImg} 
+              tecnologies={"Tecnologias: HTML + Tailwind CSS + JS + WeatherAPI"} 
+              deployUrl={'https://weather-app-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/weatherApp'}
+            />
 
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Wiki Suits</p>
-                <img className='w-[280px]  h-[170px]' src={wikiSuitsImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: React + React-Router-Dom + Tailwind CSS</p>
-                </div>
+            <ProjectContainer 
+              projectName={'Time Tracking Dashboard'} 
+              imageAddress={TimeTrackingImg} 
+              tecnologies={"Tecnologias: HTML + Tailwind CSS + JS (Fetch API)"} 
+              deployUrl={'https://time-tracking-dashboard-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/24-time-tracking-dashboard-main'}
+            />
 
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://wiki-suits.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/wiki-suits' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
+            <ProjectContainer 
+              projectName={'Interactive Rating'} 
+              imageAddress={feedbackMainImg} 
+              tecnologies={"Tecnologias: HTML + CSS + JS"} 
+              deployUrl={'https://interactive-rating-feedback.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/03-interactive-rating-component-main'}
+            />
+          
+            <ProjectContainer 
+              projectName={'Interactive Card Details'} 
+              imageAddress={interactiveCardDetailsImg} 
+              tecnologies={"Tecnologias: HTML + CSS + JS"} 
+              deployUrl={'https://interactive-card-details1.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/20-interactive-card-details-form-main'}
+            />
 
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">YB Landing Page Clone</p>
-                <img className='w-[280px]  h-[170px]' src={YouTubeCloneImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + Tailwind CSS + YouTube API + JS (Fetch API)</p>
-                </div>
+            <ProjectContainer 
+              projectName={'Tip Calculator App'} 
+              imageAddress={tipCalculatorImg} 
+              tecnologies={"Tecnologias: HTML + Tailwind CSS + JS"} 
+              deployUrl={'https://tip-calculator-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/25-tip-calculator-app'}
+            />
 
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://youtube-landingpage1.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/youtube-landing-page' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">ToDo</p>
-                <img className='w-[280px]  h-[170px]' src={ToDoProjectImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + CSS + JS + LocalStorage (CRUD)</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://todo-project-localstorage.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Advice Generator</p>
-                <img className='w-[280px]  h-[170px]' src={adviceGeneratorImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: CSS + JS (Fetch API) + Advice Slip JSON API</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://advice-generator-app-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/23-advice-generator-app-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Accordion FAQ</p>
-                <img className='w-[280px]  h-[170px]' src={FAQImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + CSS + JS </p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://faq-accordion-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/09-faq-accordion-card-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Weather APP</p>
-                <img className='w-[280px]  h-[170px]' src={weatherAppImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + Tailwind CSS + JS + WeatherAPI</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://weather-app-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/weatherApp' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Time Tracking Dashboard</p>
-                <img className='w-[280px]  h-[170px]' src={TimeTrackingImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + Tailwind CSS + JS (Fetch API)</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://time-tracking-dashboard-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/24-time-tracking-dashboard-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Interactive Rating </p>
-                <img className='w-[280px]  h-[170px]' src={feedbackMainImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + CSS + JS</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://interactive-rating-feedback.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/03-interactive-rating-component-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Interactive Card Details</p>
-                <img className='w-[280px]  h-[170px]' src={interactiveCardDetailsImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + CSS + JS</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://interactive-card-details1.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/20-interactive-card-details-form-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Tip Calculator App</p>
-                <img className='w-[280px]  h-[170px]' src={tipCalculatorImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + Tailwind CSS + JS</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://tip-calculator-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/25-tip-calculator-app' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="container-project box  ">
-                <p className="font-bold text-xl text-center my-1 tracking-wider">Age Calculator App</p>
-                <img className='w-[280px]  h-[170px]' src={ageCalculatorImg} alt="" />
-                <div className="w-full h-[40%] flex items-center justify-center">
-                  <p className="text-sm font-semibold text-center">Tecnologias: HTML + Tailwind CSS + JS</p>
-                </div>
-
-                <div className="overlay">
-                    <div className="w-full flex justify-evenly text-4xl relative -top-7">
-                      <a href='https://age-calculator-by-vandilson.netlify.app/' target='_blank' rel="noopener noreferrer">
-                        <IoEye className='self-center'/>
-                        <span className='absolute left-16 text-sm mt-2'>Ver Demo</span>
-                      </a>
-                      <a href='https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/26-age-calculator-app-main' target='_blank' rel="noopener noreferrer">
-                        <SiGithub />
-                        <span className='absolute left-44 text-sm mt-2'>Ver Código</span>
-                      </a>
-                    </div>
-                </div>
-            </div>
+            <ProjectContainer 
+              projectName={'Age Calculator App'} 
+              imageAddress={ageCalculatorImg} 
+              tecnologies={"Tecnologias: HTML + Tailwind CSS + JS"} 
+              deployUrl={'https://age-calculator-by-vandilson.netlify.app/'}
+              githubUrl={'https://github.com/vandilsonbrito/Projects-Frontendmentor/tree/main/26-age-calculator-app-main'}
+            />
+           
         </div>
     </div>
   )
